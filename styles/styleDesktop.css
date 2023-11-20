@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1150px) {
+  main > h1 {
+    padding: 5vh 0;
+  }
+
+  #pokemons {
+    height: 100%;
+    padding: 10vw 0;
+    flex-direction: row;
+  }
+
+  .pokemonImg {
+    width: 10vw;
+    padding: 0 4vw 75px 4vw;
+    transition: width 0.1s;
+  }
+
+  .pokemonImg:hover {
+    background-color: #4f4f4f;
+    border-radius: 10px;
+    width: 12.5vw;
+    cursor: pointer;
+  }
+}

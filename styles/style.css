@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand.ttf") format("truetype");
+}
+
+/* Mobile first. */
+
+* {
+  font-family: "Quicksand";
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: #1e1e1e;
+}
+
+main > h1 {
+  text-align: center;
+  padding: 10vh 0;
+}
+
+#pokemons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pokemonImg {
+  width: 12.5vh;
+  padding: 1vh 1vw;
+  transition: width 0.1s;
+}
+
+.pokemonImg:hover {
+  background-color: #4f4f4f;
+  border-radius: 10px;
+  width: 15vh;
+  cursor: pointer;
+}
