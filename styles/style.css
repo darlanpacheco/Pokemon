@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+::root {
+  --background: #1e1e1e;
+  --select: #4f4f4f;
+}
+
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/quicksand.ttf") format("truetype");
@@ -18,7 +23,7 @@ body {
   height: 100vh;
   width: 100vw;
   color: white;
-  background-color: #1e1e1e;
+  background-color: var(--background);
 }
 
 main > h1 {
@@ -43,7 +48,7 @@ main > h1 {
 }
 
 .pokemonImg:hover {
-  background-color: #4f4f4f;
+  background-color: var(--select);
   border-radius: 10px;
   cursor: pointer;
 }

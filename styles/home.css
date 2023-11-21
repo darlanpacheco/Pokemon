@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+::root {
+  --background: #1e1e1e;
+  --select: #4f4f4f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1e1e1e;
+}
+
+header {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#profile > img {
+  width: 150px;
+}
