@@ -10,3 +10,6 @@ class Pokemon {
     this._attack = attack;
   }
 }
+
+const type: string[] = ["Grass", "Water", "Fire", "Electric"];
+const pokemons: Pokemon[] = [new Pokemon("Pikachu", "Electric", 100, 100)];
