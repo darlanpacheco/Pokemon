@@ -1,5 +1,5 @@
 function pokemonImg() {
-  document.querySelector("#profileImg").src =
+  document.querySelector("#profile>img").src =
     "../images/" + localStorage.getItem("Pokemon") + ".png";
 }
 
