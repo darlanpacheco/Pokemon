@@ -49,8 +49,14 @@ header {
   justify-content: center;
 }
 
-#profile > img {
-  aspect-ratio: 1/1;
+.bar {
+  margin: auto;
+  width: 75%;
+  border-radius: 10px;
+}
+
+#name {
+  width: 50%;
 }
 
 #attackBar {
@@ -59,10 +65,4 @@ header {
 
 #healthBar {
   background-color: #7d9;
-}
-
-.bar {
-  margin: auto;
-  width: 75%;
-  border-radius: 10px;
 }
