@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-:root {
-  --background: #1e1e1e;
-  --select: #4f4f4f;
-}
-
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/quicksand.ttf") format("truetype");
 }
 
 /* Mobile first. */
+
+:root {
+  --background: #1e1e1e;
+  --select: #4f4f4f;
+}
 
 * {
   font-family: "Quicksand";
@@ -32,13 +32,12 @@ main > h1 {
 }
 
 #pokemons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   margin: auto;
   max-width: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .pokemonImg {
@@ -49,6 +48,6 @@ main > h1 {
 
 .pokemonImg:hover {
   background-color: var(--select);
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
 }
