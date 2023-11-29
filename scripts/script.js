@@ -1,11 +1,8 @@
-pokemonImgs = document.querySelectorAll(".pokemonImg");
+const pokemons = document.querySelectorAll(".pokemons");
 
-function pokemon(event) {
-  console.log(event.target);
-  localStorage.setItem("Pokemon", event.target.alt);
-  window.location = "../pages/home.html";
-}
-
-for (let index = 0; index < pokemonImgs.length; index++) {
-  pokemonImgs[index].addEventListener("click", pokemon);
+for (let i = 0; i < pokemons.length; i++) {
+  pokemons[i].addEventListener("click", (event) => {
+    localStorage.setItem("Pokemon", event.target.alt);
+    window.location = "../pages/home.html";
+  });
 }

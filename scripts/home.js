@@ -1,23 +1,12 @@
 const storagePokemon = localStorage.getItem("Pokemon");
+const pokemonImg = document.querySelector("#pokemon-img");
+const pokemonName = document.querySelector("#name");
 
-function pokemonImg() {
-  document.querySelector("#profile>img").src =
-    "../images/" + storagePokemon + ".png";
-  document.querySelector("#profile>img").alt = storagePokemon;
-}
-
-function pokemonName() {
-  document.querySelector("#name").innerHTML =
+function pokemon() {
+  pokemonImg.src = "../images/" + storagePokemon + ".png";
+  pokemonImg.alt = storagePokemon;
+  pokemonName.innerHTML =
     storagePokemon.charAt(0).toUpperCase() + storagePokemon.slice(1);
 }
 
-function circleCreator() {
-  let circle = document.createElement("div");
-  circle.style.width = "10px";
-  circle.style.height = "10px";
-  circle.style.backgroundColor = "white";
-  circle.style.borderRadius = "50%";
-}
-
-pokemonImg();
-pokemonName();
+pokemon();

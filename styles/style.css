@@ -2,52 +2,68 @@
 
 @font-face {
   font-family: "Quicksand";
-  src: url("../fonts/quicksand.ttf") format("truetype");
+  src: url("../fonts/quicksand.ttf");
+}
+
+:root {
+  --background: #1e1e1e;
+  --selected: #4f4f4f;
 }
 
 /* Mobile first. */
 
-:root {
-  --background: #1e1e1e;
-  --select: #4f4f4f;
-}
-
 * {
-  font-family: "Quicksand";
   padding: 0;
   margin: 0;
 }
 
 html,
 body {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  font-family: "Quicksand";
+  background-color: #1e1e1e;
   color: white;
-  background-color: var(--background);
 }
 
-main > h1 {
+h1 {
   text-align: center;
-  padding: 100px 0;
+  font-size: 1.5em;
+  width: 100%;
+
+  position: absolute;
+  top: 15%;
 }
 
-#pokemons {
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main > div {
   display: flex;
   justify-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
 
+  width: 100%;
+  height: 50%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-35%);
+}
+
+.pokemons {
   margin: auto;
-  max-width: 900px;
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  margin: 15px;
 }
 
-.pokemonImg {
-  width: 100px;
-  padding: 25px;
-  margin: 25px;
-}
-
-.pokemonImg:hover {
-  background-color: var(--select);
-  border-radius: 15px;
+.pokemons:hover {
+  background-color: var(--selected);
+  border-radius: 25px;
   cursor: pointer;
 }
