@@ -1,19 +1,20 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 850px) {
+  body {
+    flex-direction: row;
+  }
+
   header {
-    height: 100%;
+    width: 25%;
+    max-width: 300px;
   }
 
   header > div {
-    height: 100%;
-    width: 25%;
-    max-width: 300px;
     flex-direction: column;
   }
 
   #pokemon-img {
     padding: 0px;
     width: 100%;
-    aspect-ratio: 1;
   }
 
   #name {

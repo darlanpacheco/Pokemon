@@ -21,23 +21,28 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+}
+
+body {
   font-family: "Quicksand";
   background-color: var(--background);
   color: white;
   font-weight: 600;
 
   display: flex;
+  flex-direction: column;
 }
 
 header {
-  height: 100px;
-  width: 100%;
+  background-color: var(--selected);
+
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
 }
 
 header > div {
   display: flex;
-  height: 100px;
-  background-color: var(--selected);
 }
 
 #pokemon-img {
@@ -67,4 +72,49 @@ header > div {
   text-align: center;
   width: 85%;
   border-radius: 10px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main > div {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+
+  transform: translateX(50%);
+}
+
+.pve-points {
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.pve-points:nth-child(6n + 1) {
+  margin-left: 25px;
+}
+
+.pve-points:nth-child(6n + 2) {
+  margin-left: 50px;
+}
+
+.pve-points:nth-child(6n + 3) {
+  margin-left: 25px;
+}
+
+.pve-points:nth-child(6n + 4) {
+  margin-left: -25px;
+}
+
+.pve-points:nth-child(6n + 5) {
+  margin-left: -50px;
+}
+
+.pve-points:nth-child(6n + 6) {
+  margin-left: -25px;
 }
